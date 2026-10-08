@@ -1,17 +1,122 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Experiencia y Habilidades
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="card-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title><b>Perfil académico</b></ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="perfil-academico">
+        Actualmente estoy cursando la carrera de Tecnología en Desarrollo
+        de Software, donde he adquirido conocimientos en programación,
+        desarrollo web y uso de herramientas para el desarrollo de software.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-accordion-group>
+      <ion-accordion value="experiencia">
+        <ion-item slot="header">
+          <ion-label>Experiencia y Habilidades</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title><b>Lenguajes de Programación</b></ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              <ion-list>
+                <ion-item>Java</ion-item>
+                <ion-item>Python</ion-item>
+                <ion-item>JavaScript</ion-item>
+                <ion-item>HTML</ion-item>
+                <ion-item>CSS</ion-item>
+                <ion-item>React</ion-item>
+                <ion-item>C++</ion-item>
+                <ion-item>PHP</ion-item>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+
+
+        </div>
+      </ion-accordion>
+
+      <ion-accordion value="proyectos">
+        <ion-item slot="header">
+          <ion-label>Proyectos Académicos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <!--Sistema control de gastos-->
+          <ion-card>
+            <h2>Sistema de Control de Gastos con IA</h2>
+
+            <ion-badge color="primary">Web</ion-badge>
+
+            <p>
+              Aplicación web para gestionar ingresos y gastos,
+              desarrollada como proyecto académico.
+            </p>
+
+            <ion-chip>React</ion-chip>
+            <ion-chip>JavaScript</ion-chip>
+            <div class="proyectos-image">
+              <img src="assets/images/Cgastos.png" alt="gastos" />
+            </div>
+          </ion-card>
+
+          <!--Clasificador de prendas -->
+          <ion-card>
+            <h2>Clasificador de prendas con IA</h2>
+
+            <ion-badge color="success">IA</ion-badge>
+
+            <p>
+              Aplicación que utiliza inteligencia artificial
+              para clasificar imágenes de prendas.
+            </p>
+
+            <ion-chip>Python</ion-chip>
+            <ion-chip>TensorFlow</ion-chip>
+            <div class="proyectos-image">
+              <img src="assets/images/prendas.png" alt="prendas" />
+            </div>
+          </ion-card>
+
+          <!--Sistema entrega de licencias-->
+          <ion-card>
+            <h2>Sistema de Entrega de Licencias</h2>
+
+            <ion-badge color="primary">Web</ion-badge>
+
+            <p>
+              Sistema web para la gestión y entrega de licencias,
+              en el cual se registra, controla y se hace un seguimiento a cada solicitud.
+            </p>
+
+            <ion-chip>Java</ion-chip>
+            <ion-chip>Java Swing</ion-chip>
+            <ion-chip>MySQL</ion-chip>
+            <div class="proyectos-image">
+              <img src="assets/images/licencia.png" alt="licencias" />
+            </div>
+          </ion-card>
+
+        </div>
+      </ion-accordion>
+
+    </ion-accordion-group>
+
+
+  </div>
+
 </ion-content>

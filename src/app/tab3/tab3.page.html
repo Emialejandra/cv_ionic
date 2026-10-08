@@ -1,17 +1,149 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Formación y más 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="card-container">
+
+    <!-- Formación académica -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Formación Académica</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-list>
+
+          <ion-item>
+            <ion-icon name="school-outline" slot="start"></ion-icon>
+
+            <ion-label>
+              <h2>Tecnología en Desarrollo de Software</h2>
+              <p>Escuela Politécnica Nacional</p>
+              <p>En curso</p>
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="school-outline" slot="start"></ion-icon>
+
+            <ion-label>
+              <h2>Bachillerato</h2>
+              <p>Unidad Educativa República de Bolivia</p>
+              <p>Graduada</p>
+            </ion-label>
+          </ion-item>
+
+        </ion-list>
+
+      </ion-card-content>
+    </ion-card>
+
+
+    <!-- Conocimientos -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Áreas de Conocimiento</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-chip>Desarrollo Web</ion-chip>
+        <ion-chip>Aplicaciones Móviles</ion-chip>
+        <ion-chip>Bases de Datos</ion-chip>
+        <ion-chip>Inteligencia Artificial</ion-chip>
+        <ion-chip>IoT</ion-chip>
+        <ion-chip>APIs REST</ion-chip>
+        <ion-chip>Git y GitHub</ion-chip>
+
+      </ion-card-content>
+    </ion-card>
+
+
+    <!-- Idiomas -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Idiomas</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-list>
+
+          <ion-item>
+            <ion-icon name="language-outline" slot="start"></ion-icon>
+
+            <ion-label>
+              <h2>Español</h2>
+              <p>Idioma nativo</p>
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="language-outline" slot="start"></ion-icon>
+
+            <ion-label>
+              <h2>Inglés</h2>
+              <p>Nivel básico</p>
+            </ion-label>
+          </ion-item>
+
+        </ion-list>
+
+      </ion-card-content>
+    </ion-card>
+
+
+    <!-- Objetivo profesional -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Objetivo Profesional</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <p class="p-profesional">
+          Desarrollarme profesionalmente en el área de tecnología,
+          fortaleciendo mis conocimientos en desarrollo de software,
+          aplicaciones web y móviles, inteligencia artificial e IoT.
+        </p>
+
+      </ion-card-content>
+    </ion-card>
+
+
+    <!-- Información adicional -->
+    <ion-accordion-group>
+
+      <ion-accordion value="contacto">
+
+        <ion-item slot="header">
+          <ion-label>Información adicional</ion-label>
+        </ion-item>
+
+        <div class="ion-padding" slot="content">
+
+          <p>
+            📍 Quito, Pichincha, Ecuador
+          </p>
+
+          <p>
+            📧 emilia.tana.p@gmail.com
+          </p>
+
+
+        </div>
+
+      </ion-accordion>
+
+    </ion-accordion-group>
+
+  </div>
+
 </ion-content>

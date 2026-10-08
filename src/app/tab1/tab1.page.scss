@@ -1,0 +1,65 @@
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.datos-perfil {
+    flex: 1;
+}
+
+ion-card-header {
+    padding: 0;
+}
+
+ion-card-content {
+    padding: 20px 0 0 0;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+ion-card-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+ion-card-subtitle {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.contact-list {
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #5b5a5a;
+}
+
+.contact-list ion-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 18px;
+    text-align: center;
+}
+
+.contact-list ion-label {
+    font-size: 15px;
+    color: #d5cbcb;
+}
+
+.contact-list ion-label b {
+    font-weight: bold;
+    color: #b8cce9;
+}
+
